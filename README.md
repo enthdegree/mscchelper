@@ -1,2 +1,3 @@
-# mscchelper
-Microsoft Comic Chat Helper
+This script allows Microsoft Comic Chat 2.5 (4.71.2302) to be used with bnchub and Freenode.
+
+Freenode does not use some formatting that MSCC depends on for operation. As a result, MSCC will crash upon joining Freenode channels. This script provides a fix by creating a ``server socket'' on loclhost. Once MSCC connects to it, the script establishes a connection with Freenode. It begins forwarding MSCC's input to Freenode and sanitizing Freenode's responses before sending them back to MSCC.
